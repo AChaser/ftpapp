@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability= "blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/id_listitem_fragment_video_movie_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_easytransfer_music" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/id_listitem_fragment_video_movie_image"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id_listitem_fragment_video_movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/music"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_listitem_fragment_video_movie_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music" />
+
+            <TextView
+                android:id="@+id/id_listitem_fragment_video_movie_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/music" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_listitem_sent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_send_click"
+        android:focusable = "false"
+        android:text="发送" >
+    </Button>
+
+</RelativeLayout>

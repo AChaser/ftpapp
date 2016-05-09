@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:weiwei="http://schemas.android.com/apk/res/org.weiwei.ui.activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80dp" >
+
+    <ImageView
+        android:id="@+id/id_listitem_trans_list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_easytransfer_music" />
+
+    <org.weiwei.ui.view.CirProgressLayout
+        android:id="@+id/id_listitem_trans_list_progressbar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@id/id_listitem_trans_list_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/id_listitem_trans_list_image"
+        android:layout_centerVertical="true"
+        weiwei:centerIcon="@drawable/bt_resume_task_btn_normal"
+        weiwei:progressColor="@color/my_green"
+        weiwei:progressWidth="3dp"
+        weiwei:stopIcon="@drawable/bt_pause_task_btn_normal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/id_listitem_trans_list_image"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/id_listitem_trans_list_progressbar"
+        android:layout_toRightOf="@id/id_listitem_trans_list_image" >
+
+        <TextView
+            android:id="@+id/id_listitem_trans_list_filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="火影忍者剧场版the last"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/id_listitem_trans_list_filename"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/id_listitem_trans_list_filesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="876MB"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/id_listitem_trans_list_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="暂停下载"
+                android:textColor="@color/grey" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

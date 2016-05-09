@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:weiwei="http://schemas.android.com/apk/res/org.weiwei.ui.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <org.weiwei.ui.view.TopBar
+        android:id="@+id/id_activity_trans_list_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        weiwei:leftBackground="@drawable/back_click"
+        weiwei:lineBackground="@color/grey"
+        weiwei:lineHeight="1dp"
+        weiwei:title="@string/trans_list"
+        weiwei:titleTextColor="#000"
+        weiwei:titleTextSize="12sp" >
+    </org.weiwei.ui.view.TopBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/id_title_tv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="下载任务"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/id_title_tv_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="上传任务"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/id_title_tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="历史任务"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_tabline"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@color/my_green" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey" />
+
+    <org.weiwei.ui.view.MainViewPager
+        android:id="@+id/id_activity_trans_list_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </org.weiwei.ui.view.MainViewPager>
+
+</LinearLayout>

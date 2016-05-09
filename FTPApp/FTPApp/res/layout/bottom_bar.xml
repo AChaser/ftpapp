@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" 
+        android:background="#000"/>
+
+    <ImageView
+        android:id="@+id/id_icon_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_jog_dial_sound_on" />
+
+    <ImageView
+        android:id="@+id/id_icon_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_jog_dial_unlock" />
+
+    <ImageView
+        android:id="@+id/id_icon_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_jog_dial_answer" />
+
+    <ImageView
+        android:id="@+id/id_icon_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_jog_dial_vibrate_on" />
+
+    <ImageView
+        android:id="@+id/id_icon_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_jog_dial_decline" />
+
+</RelativeLayout>

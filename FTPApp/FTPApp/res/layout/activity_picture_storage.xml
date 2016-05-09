@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:weiwei="http://schemas.android.com/apk/res/org.weiwei.ui.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <org.weiwei.ui.view.TopBar
+        android:id="@+id/id_activity_picture_storage_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        weiwei:leftBackground="@drawable/back_click"
+        weiwei:lineBackground="@color/grey"
+        weiwei:lineHeight="1dp"
+        weiwei:title="@string/service_list"
+        weiwei:titleTextColor="#000"
+        weiwei:titleTextSize="11sp" >
+    </org.weiwei.ui.view.TopBar>
+
+
+    <GridView
+        android:id="@+id/id_activity_picture_storage_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="90dip"
+        android:gravity="center"
+        android:horizontalSpacing="2dip"
+        android:listSelector="@drawable/click_background"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dip">
+    </GridView>
+    
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyView">
+        <attr name="title" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="leftText" format="string" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftBackground" format="reference|color" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="rightText" format="string" />
+        <attr name="rightBackground" format="reference|color" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="lineBackground" format="reference|color" />
+        <attr name="lineHeight" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="CircleProgress">
+        <attr name="centerIcon" format="reference|color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="startIcon" format="reference|color" />
+        <attr name="stopIcon" format="reference|color" />
+        <attr name="finishIcon" format="reference|color" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressBackgourd" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="SlidingMenuLayout">
+        <attr name="MenuWidth" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="PathBar">
+        <attr name="arrow" format="reference" />
+        <attr name="leftTitleText" format="string"></attr>
+    </declare-styleable>
+
+</resources>

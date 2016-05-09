@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:weiwei="http://schemas.android.com/apk/res/org.weiwei.ui.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.weiwei.ui.view.TopBar
+        android:id="@+id/id_login_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        weiwei:leftBackground="@drawable/back_click"
+        weiwei:lineBackground="@color/grey"
+        weiwei:lineHeight="0.5dp"
+        weiwei:title="登录服务器"
+        weiwei:titleTextColor="#000"
+        weiwei:titleTextSize="11sp" >
+    </org.weiwei.ui.view.TopBar>
+
+    <!-- 表格布局 -->
+
+    <TableLayout
+        android:id="@+id/id_my_server_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_login_topbar"
+        android:padding="10dip" >
+
+        <!-- 表格布局：第一行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_top_corner_no_bottom_line"
+            android:padding="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="地址:"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/id_login_host_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="113.54.152.85"
+                android:textColor="@color/black" >
+            </EditText>
+        </TableRow>
+        <!-- 表格布局：第二行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_no_corner_without_bottom"
+            android:padding="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="端口:"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/id_login_port_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="21"
+                android:textColor="@color/black" >
+            </EditText>
+        </TableRow>
+        <!-- 表格布局：第三行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_no_corner_without_bottom"
+            android:padding="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="用户:"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/id_login_user_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="admin"
+                android:textColor="@color/black" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bottom_corner_no_top_line"
+            android:padding="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="密码:"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/id_login_pass_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:text="admin123"
+                android:textColor="@color/black" >
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/id_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_my_server_table"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_send_click"
+        android:text="登录"
+        android:textColor="@color/black"
+        android:textSize="18sp" >
+    </Button>
+
+</RelativeLayout>
